@@ -64,4 +64,6 @@ resetBtn.onclick = function(){
   })
   custom.value ="";
   peopleNum.value = 1;
+    document.querySelector(".person-result").innerHTML = `\$0,00`;
+  document.querySelector(".total-result").innerHTML = `\$0,00`;
 }
