@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tip Calculator</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="icon" href="images/favicon-32x32.png">
+</head>
+<body>
+  <div class="tip">
+    <img src="images/logo.svg" class="img" alt="">
+    <div class="container">
+      <div class="calc">
+        <div class="left">
+          <label for="bill">Bill</label>
+        <div class="bill">
+          <img src="images/icon-dollar.svg" alt="">
+          <input type="number" id="bill" name="bill">
+        </div>
+          <p>Select Tip%</p>
+          <div class="options">
+            <span data-percent="5%" onclick="spanValue(this.dataset.percent)">5%</span>
+            <span data-percent="10%" onclick="spanValue(this.dataset.percent)">10%</span>
+            <span data-percent="15%" onclick="spanValue(this.dataset.percent)">15%</span>
+            <span data-percent="25%" onclick="spanValue(this.dataset.percent)">25%</span>
+            <span data-percent="50%" onclick="spanValue(this.dataset.percent)">50%</span>
+            <input type="number" class="doh" placeholder="Custom" id="custom">
+          </div>
+          <label for="people">Number Of People</label>
+          <div class="person">
+            <img src="/images/icon-person.svg" alt="">
+            <input min="1" type="number" value="1" name="people" id="people">
+          </div>
+        </div>
+        <div class="right">
+          <div class="per-person">
+            <p class="tips">Tip Amount <br> <span>/ person</span></p>
+            <p class="person-result">$0.00</p>
+          </div>
+          <div class="total">
+            <p class="tips">Total <br> <span>/ person</span></p>
+            <p class="total-result">$0.00</p>
+          </div>
+          <button id="reset">Reset</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
