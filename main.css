@@ -253,4 +253,7 @@ input{
   .calc{
     flex-direction: column;
   }
+    .container{
+    padding-top:300px ;
+  }
 }
