@@ -257,6 +257,7 @@ input{
 @media(max-width:450px){
   .calc{
     flex-direction: column;
+    width: 100%;
   }
   .container{
 
